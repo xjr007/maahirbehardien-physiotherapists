@@ -12,13 +12,13 @@ const useStyles = makeStyles({
 	},
 });
 
-const theme = createMuiTheme({
-	palette: {
-		secondary: {
-			main: '#F2380F',
-		},
-	},
-});
+// const theme = createMuiTheme({
+// 	palette: {
+// 		secondary: {
+// 			main: '#F2380F',
+// 		},
+// 	},
+// });
 
 export const NavbarLargeScreen = () => {
 	const classes = useStyles();
@@ -29,17 +29,16 @@ export const NavbarLargeScreen = () => {
 	};
 
 	return (
-		<ThemeProvider theme={theme}>
+		
 			<Paper className={classes.root}>
-				<Tabs value={value} onChange={handleChange} centered indicatorColor='secondary'>
+				<Tabs value={value} onChange={handleChange} centered indicatorColor='inherit'>
 					<span className='logo'>Maahir Behardien Physiotherapists</span>
 					<Tab label='Home' className='tab' />
-					<Tab label='Our Team' className='tab' />
 					<Tab label='What We Do' className='tab' />
-					<Tab label='Get in touch' className='contact-tab tab' />
+					<Tab label='Our Team' className='tab' />
+					<Tab label='Contact Us' className='contact-tab tab' />
 				</Tabs>
 			</Paper>
-		</ThemeProvider>
 	);
 };
 

@@ -1,43 +1,52 @@
+#root {
+  background-color: rgba(245, 245, 245, 0.713);
+}
+
 .contact-tab {
-	position: absolute !important;
-	right: 0 !important;
+  position: absolute !important;
+  right: 0 !important;
 }
 
 .MuiTabs-flexContainer {
-	background-color: #0477bf;
-	color: white;
+  background-color: rgba(245, 245, 245, 0.713);
+  /* color: #0477bf; */
+  color: black;
 }
 
 .MuiToolbar-root {
-	background-color: #0477bf;
+  background-color: rgba(245, 245, 245, 0.713);
 }
 
 .list-1 {
-	background-color: #0477bf !important;
-	color: white;
+  background-color: rgba(245, 245, 245, 0.713);
+  color: black;
 }
 
 .makeStyles-drawerHeader-8 {
-	color: #f2380f !important;
+  color: #f2380f !important;
 }
 
 .tab {
-	transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .tab:hover {
-	color: #f2380f;
+  color: #f2380f;
 }
 
 .logo {
-	position: absolute;
-	left: 0;
-	font-size: large;
-	padding-top: 0.8rem;
-	padding-left: 2rem;
-	font-family: 'Roboto', sans-serif;
+  text-decoration: none !important;
+  position: absolute;
+  left: 0;
+  font-size: large;
+  padding-top: 0.8rem;
+  padding-left: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+#logo {
+  color: black;
 }
 
 .MuiTabs-flexContainer {
-	padding: 0.5rem;
+  padding: 0.5rem;
 }
