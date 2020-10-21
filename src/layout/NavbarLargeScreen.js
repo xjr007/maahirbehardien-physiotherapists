@@ -5,6 +5,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
+import { AppBar } from '@material-ui/core';
 
 const useStyles = makeStyles({
 	root: {
@@ -31,13 +32,16 @@ export const NavbarLargeScreen = () => {
 	return (
 		<ThemeProvider theme={theme}>
 			<Paper className={classes.root}>
-				<Tabs value={value} onChange={handleChange} centered indicatorColor='secondary'>
+			<AppBar position='fixed'>
+			<Tabs value={value} onChange={handleChange} centered indicatorColor='secondary'>
 					<span className='logo'>Maahir Behardien Physiotherapists</span>
 					<Tab label='Home' className='tab' />
-					<Tab label='Our Team' className='tab' />
-					<Tab label='What We Do' className='tab' />
+					<Tab label='About us' className='tab' />
+					<Tab label='Location' className='tab' />
 					<Tab label='Get in touch' className='contact-tab tab' />
 				</Tabs>
+			</AppBar>
+				
 			</Paper>
 		</ThemeProvider>
 	);

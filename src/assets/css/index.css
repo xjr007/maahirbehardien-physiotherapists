@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*
+Navbar start
+*/
+
+.contact-tab {
+  position: absolute !important;
+  right: 0 !important;
+}
+
+.MuiTabs-flexContainer {
+  background-color: #0477bf;
+  color: white;
+}
+
+.MuiToolbar-root {
+  background-color: #0477bf;
+}
+
+.list-1 {
+  background-color: #0477bf !important;
+  color: white;
+}
+
+.makeStyles-drawerHeader-8 {
+  color: #f2380f !important;
+}
+
+.tab {
+  transition: all 0.3s;
+}
+
+.tab:hover {
+  color: #f2380f;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  font-size: large;
+  padding-top: 0.8rem;
+  padding-left: 2rem;
+}
+
+.MuiTabs-flexContainer {
+  padding: 0.5rem;
+}
+
+/*
+Navbar end
+*/
+
+/*
+Landing start
+*/
+
+.landing {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: auto;
+  background-color: rgba(245, 245, 245, 0.44);
+}
+
+.landing > .landing-intro {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+
+  text-align: center;
+  font-size: x-large;
+  background-image: url(../img/physio-massage-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing > .landing-intro > #landing-head,
+#landing-sub {
+  text-decoration: none;
+  line-height: normal;
+  margin: 0.6rem;
+  color: whitesmoke;
+}
+
+.landing > .landing-intro > #landing-motto {
+  font-style: italic;
+}
+
+.landing > .landing-intro > #button {
+  margin-top: 6rem;
+  align-self: center;
+  width: 50%;
+  font-weight: 700;
+}
+/* 
+.landing > .landing-imgbox {
+  height: 50%;
+  width: 50%;
+}
+
+.landing > .landing-img > #landing-img {
+  height: 256px;
+  width: 256px;
+} */
+
+/*
+Landing end
+*/
+
+@media screen and (min-width: 1080px) {
+  .landing > .landing-intro {
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+  }
+  .landing > .landing-intro > #button {
+    width: 15em;
+    font-size: 16px;
+  }
+}
