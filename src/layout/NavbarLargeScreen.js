@@ -12,14 +12,6 @@ const useStyles = makeStyles({
 	},
 });
 
-// const theme = createMuiTheme({
-// 	palette: {
-// 		secondary: {
-// 			main: '#F2380F',
-// 		},
-// 	},
-// });
-
 export const NavbarLargeScreen = () => {
 	const classes = useStyles();
 	const [value, setValue] = React.useState(0);
