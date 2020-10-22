@@ -132,25 +132,37 @@ const NavbarTabMobScreen = () => {
         </div>
         <Divider />
         <List className='list-1'>
-          {['Home', 'What we do', 'Our Team'].map((text, index) => (
-            <ListItem button key={text} className='tab'>
+          <a href='#home'>
+            <ListItem button key='Home' className='tab'>
               <ListItemIcon>
-                {index === 0 && <HomeSharpIcon />}
-                {index === 1 && <HelpOutlineSharpIcon />}
-                {index === 2 && <EmojiPeopleSharpIcon />}
+                <HomeSharpIcon />
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary='Home' />
             </ListItem>
-          ))}
+          </a>
+          <a href='#about-us'>
+            <ListItem button key='About us' className='tab'>
+              <ListItemIcon>
+                <EmojiPeopleSharpIcon />
+              </ListItemIcon>
+              <ListItemText primary='About us' />
+            </ListItem>
+          </a>
+          <ListItem button key='Location' className='tab'>
+            <ListItemIcon>
+              <HelpOutlineSharpIcon />
+            </ListItemIcon>
+            <ListItemText primary='Location' />
+          </ListItem>
         </List>
         <Divider />
         <List className='list-2'>
-          {['Get in touch'].map((text, index) => (
-            <ListItem button key={text} className='tab'>
-              <ListItemIcon>{index === 0 && <CallSharpIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
+          <ListItem button key='Get in touch' className='tab'>
+            <ListItemIcon>
+              <CallSharpIcon />
+            </ListItemIcon>
+            <ListItemText primary='Get in touch' />
+          </ListItem>
         </List>
       </Drawer>
     </div>

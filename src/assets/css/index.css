@@ -7,6 +7,11 @@
   letter-spacing: 2px;
 }
 
+a {
+  color: #31140d;
+  text-decoration: none;
+}
+
 .App {
   display: flex;
   flex-flow: column;
