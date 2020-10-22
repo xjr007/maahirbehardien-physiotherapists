@@ -131,6 +131,20 @@ About section start
 }
 
 /*
+Cards
+*/
+
+#about-us > .about-container > .about-profiles > .profle {
+  display: flex;
+  margin: 4rem;
+}
+
+#about-us > .about-container > .about-profiles > .profle > .avatar {
+  width: 256px;
+  height: 256px;
+}
+
+/*
 About section end
 */
 
