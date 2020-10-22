@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import LandingIMG from '../../assets/img/physio-massage-back.jpg';
 
 const IntroSection = () => {
     return (
