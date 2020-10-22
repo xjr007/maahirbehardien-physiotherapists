@@ -157,6 +157,74 @@ About section start
 Cards
 */
 
+.about-us > .about-container > .about-profiles {
+  text-align: center;
+}
+
+.about-us > .about-container > .about-profiles > #header {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 4rem;
+  color: #31140d;
+}
+
+.about-us > .about-container > .about-profiles > div > .card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.about-us
+  > .about-container
+  > .about-profiles
+  > div
+  > .card
+  > .card-img
+  > #img {
+  padding-bottom: 2rem;
+}
+
+.about-us > .about-container > .about-profiles > div > .card > .info-box {
+  color: rgba(0, 0, 0, 0.872);
+}
+
+.about-us
+  > .about-container
+  > .about-profiles
+  > div
+  > .card
+  > .info-box
+  > #title {
+  color: #31140d;
+}
+
+.about-us
+  > .about-container
+  > .about-profiles
+  > div
+  > .card
+  > .info-box
+  > #role {
+  margin-top: 2rem;
+  color: rgba(0, 0, 0, 0.559);
+}
+
+.about-us
+  > .about-container
+  > .about-profiles
+  > div
+  > .card
+  > .info-box
+  > #text {
+  margin-top: 2rem;
+  color: rgba(0, 0, 0, 0.759);
+}
+
 /*
 About section end
 */
@@ -192,10 +260,6 @@ About section end
     font-size: 40px;
     text-transform: uppercase;
   }
-  /* 
-  .about-us > .about-container > .about-top > #header > #scnd-header {
-    color: #00a66a;
-  } */
 
   .about-us > .about-container > .about-top > #header-text {
     width: 75%;
@@ -204,55 +268,30 @@ About section end
 
   .about-us > .about-container > .about-profiles {
     width: 100%;
+    text-align: start;
   }
 
-  .about-us > .about-container > .about-profiles > #header {
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    font-weight: 400;
-    font-size: 40px;
-    text-transform: uppercase;
-    padding-top: 4rem;
-    color: #31140d;
-  }
-
-  /* .about-us > .about-container > .about-profiles > #header > #scnd-header {
-    color: #00a66a;
-  } */
-
-  .about-us > .about-container > .about-profiles > .card {
+  .about-us > .about-container > .about-profiles > div > .card {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     margin: 2rem 8rem;
     padding: 2rem 4rem;
     border-bottom: #31140d 0.6px solid;
   }
 
-  .about-us > .about-container > .about-profiles > .card > .card-img {
-    margin: 2rem;
-  }
-
-  .about-us > .about-container > .about-profiles > .card > .info-box {
+  .about-us > .about-container > .about-profiles > div > .card > .info-box {
     margin: 2rem 4rem;
     color: rgba(0, 0, 0, 0.872);
   }
 
-  .about-us > .about-container > .about-profiles > .card > .info-box > #title {
-    color: #31140d;
-  }
-
-  .about-us > .about-container > .about-profiles > .card > .info-box > #role {
-    margin-top: 2rem;
-    color: rgba(0, 0, 0, 0.559);
-  }
-
-  .about-us > .about-container > .about-profiles > .card > .info-box > #text {
-    margin-top: 2rem;
-    color: rgba(0, 0, 0, 0.759);
-  }
-
-  .about-us > .about-container > .about-profiles > .card > .card-img > #img {
+  .about-us
+    > .about-container
+    > .about-profiles
+    > div
+    > .card
+    > .card-img
+    > #img {
     width: 256px;
     height: 256px;
   }

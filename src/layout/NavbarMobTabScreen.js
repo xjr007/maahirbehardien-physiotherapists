@@ -112,9 +112,6 @@ const NavbarTabMobScreen = () => {
             className={clsx(classes.menuButton, open && classes.hide)}>
             <MenuIcon />
           </IconButton>
-          <Typography Wrap centered id='logo'>
-            Maahir Behardien - Physiotherapists
-          </Typography>
         </Toolbar>
       </AppBar>
       <Drawer
