@@ -6,6 +6,10 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.App {
+  display: flex;
+  flex-flow: column;
+}
 /*
 Navbar start
 */
@@ -115,6 +119,19 @@ Landing start
 
 /*
 Landing end
+*/
+
+/*
+About section start
+*/
+
+#About-us {
+  height: 100vh;
+  width: 100%;
+}
+
+/*
+About section end
 */
 
 @media screen and (min-device-width: 1080px) {
