@@ -4,8 +4,18 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
 }
 
+a {
+  color: #31140d;
+  text-decoration: none;
+}
+
+.App {
+  display: flex;
+  flex-flow: column;
+}
 /*
 Navbar start
 */
@@ -17,7 +27,7 @@ Navbar start
 .MuiTabs-flexContainer {
   background-color: rgba(245, 245, 245, 0.92);
   /* color: #0477bf; */
-  color: black;
+  color: #31140d;
   transition: all 0.3s;
 }
 
@@ -27,7 +37,7 @@ Navbar start
 
 .list-1 {
   background-color: rgba(245, 245, 245, 0.92);
-  color: black;
+  color: #31140d;
 }
 
 .makeStyles-drawerHeader-8 {
@@ -51,7 +61,7 @@ Navbar start
   padding-left: 2rem;
 }
 #logo {
-  color: black;
+  color: #31140d;
 }
 
 .MuiTabs-flexContainer {
@@ -101,13 +111,14 @@ Landing start
 
 .landing > .landing-intro > #landing-motto {
   font-style: italic;
+  color: #31140d;
 }
 
 .landing > .landing-intro > #button {
   margin-top: 6rem;
   align-self: center;
   width: 50%;
-  font-size: 8px;
+  font-size: 16px;
   font-weight: 700;
   background-color: #f2380f;
   color: rgba(245, 245, 245, 0.92);
@@ -115,6 +126,112 @@ Landing start
 
 /*
 Landing end
+*/
+
+/*
+About section start
+*/
+
+.about-us {
+  width: 100%;
+  height: auto;
+}
+
+.about-us > .about-container > .about-top {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-us > .about-container > .about-top > #header {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #31140d;
+}
+
+.about-us > .about-container > .about-top > #header-text {
+  width: 75%;
+  margin: 2rem;
+}
+/*
+Cards
+*/
+
+.about-us > .about-container > .about-profiles {
+  text-align: center;
+}
+
+.about-us > .about-container > .about-profiles > #header {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 4rem;
+  color: #31140d;
+}
+
+.about-us > .about-container > .about-profiles > div > .card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.about-us
+  > .about-container
+  > .about-profiles
+  > div
+  > .card
+  > .card-img
+  > #img {
+  padding-bottom: 2rem;
+}
+
+.about-us > .about-container > .about-profiles > div > .card > .info-box {
+  color: rgba(0, 0, 0, 0.872);
+}
+
+.about-us
+  > .about-container
+  > .about-profiles
+  > div
+  > .card
+  > .info-box
+  > #title {
+  color: #31140d;
+}
+
+.about-us
+  > .about-container
+  > .about-profiles
+  > div
+  > .card
+  > .info-box
+  > #role {
+  margin-top: 2rem;
+  color: rgba(0, 0, 0, 0.559);
+}
+
+.about-us
+  > .about-container
+  > .about-profiles
+  > div
+  > .card
+  > .info-box
+  > #text {
+  margin-top: 2rem;
+  color: rgba(0, 0, 0, 0.759);
+}
+
+/*
+About section end
 */
 
 @media screen and (min-device-width: 1080px) {
@@ -126,5 +243,61 @@ Landing end
   .landing > .landing-intro > #button {
     width: 15em;
     font-size: 16px;
+  }
+
+  .about-us {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-us > .about-container > .about-top {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about-us > .about-container > .about-top > #header {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  .about-us > .about-container > .about-top > #header-text {
+    width: 75%;
+    margin: 2rem;
+  }
+
+  .about-us > .about-container > .about-profiles {
+    width: 100%;
+    text-align: start;
+  }
+
+  .about-us > .about-container > .about-profiles > div > .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem 8rem;
+    padding: 2rem 4rem;
+    border-bottom: #31140d 0.6px solid;
+  }
+
+  .about-us > .about-container > .about-profiles > div > .card > .info-box {
+    margin: 2rem 4rem;
+    color: rgba(0, 0, 0, 0.872);
+  }
+
+  .about-us
+    > .about-container
+    > .about-profiles
+    > div
+    > .card
+    > .card-img
+    > #img {
+    width: 256px;
+    height: 256px;
   }
 }
