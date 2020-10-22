@@ -9,24 +9,25 @@
 /*
 Navbar start
 */
-
 .contact-tab {
   position: absolute !important;
   right: 0 !important;
 }
 
 .MuiTabs-flexContainer {
-  background-color: #0477bf;
-  color: white;
+  background-color: rgba(245, 245, 245, 0.92);
+  /* color: #0477bf; */
+  color: black;
+  transition: all 0.3s;
 }
 
 .MuiToolbar-root {
-  background-color: #0477bf;
+  background-color: rgba(245, 245, 245, 0.872);
 }
 
 .list-1 {
-  background-color: #0477bf !important;
-  color: white;
+  background-color: rgba(245, 245, 245, 0.92);
+  color: black;
 }
 
 .makeStyles-drawerHeader-8 {
@@ -42,11 +43,15 @@ Navbar start
 }
 
 .logo {
+  text-decoration: none !important;
   position: absolute;
   left: 0;
   font-size: large;
   padding-top: 0.8rem;
   padding-left: 2rem;
+}
+#logo {
+  color: black;
 }
 
 .MuiTabs-flexContainer {
@@ -68,7 +73,7 @@ Landing start
   align-items: center;
   height: auto;
   width: auto;
-  background-color: rgba(245, 245, 245, 0.44);
+  background-color: rgba(245, 245, 245, 0.824);
 }
 
 .landing > .landing-intro {
@@ -102,7 +107,10 @@ Landing start
   margin-top: 6rem;
   align-self: center;
   width: 50%;
+  font-size: 8px;
   font-weight: 700;
+  background-color: #f2380f;
+  color: rgba(245, 245, 245, 0.92);
 }
 /* 
 .landing > .landing-imgbox {
@@ -119,7 +127,7 @@ Landing start
 Landing end
 */
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-device-width: 1080px) {
   .landing > .landing-intro {
     align-items: center;
     justify-content: center;
