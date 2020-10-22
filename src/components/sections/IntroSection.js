@@ -3,8 +3,8 @@ import Button from '@material-ui/core/Button';
 
 const IntroSection = () => {
     return (
-        <section className='landing'>
-            <div className='landing-intro'>
+        <section id='home' className='landing'>
+            <div  className='landing-intro'>
             <h1 id='landing-head'>Maahir Behardien</h1>
 
             <h1 id='landing-sub'>Physiotherapists</h1>
